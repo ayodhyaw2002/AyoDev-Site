@@ -14,12 +14,12 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
 :root {
-  --blue: #79A9F5;
-  --indigo: #C45F90;
+  --blue: #18a0aa;
+  --indigo: #5fbdc4;
   --purple: #A16AE8;
-  --pink: #FC8BC0;
-  --red: #F85C70;
-  --orange: #FF8882;
+  --pink: #8beffc;
+  --red: #5cf8f8;
+  --orange: #4b8ead;
   --yellow: #FAD02C;
   --green: #A3C14A;
   --teal: #20c997;
@@ -27,14 +27,15 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #F85C70;
+  --primary: #0c8db4;
   --secondary: #6c757d;
   --success: #A3C14A;
-  --info: #47D8E0;
-  --warning: #FF8882;
-  --danger: #F85C70;
+  --info: #1b969c;
+  --warning: #0c6879;
+  --danger: #15b2bd;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #07080a;
+  --newblue: #138ca1;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -70,6 +71,10 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+}
+
+.header-title{
+  font-size: 1.3rem;
 }
 
 [tabindex="-1"]:focus {
@@ -162,28 +167,32 @@ sup {
 }
 
 a {
-  color: #F85C70;
+  color: #5ce1f8;
   text-decoration: none;
   background-color: transparent;
+  font-size: larger;
 }
 
 a:hover {
-  color: #f51330;
+  color: #139bf5;
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
+  color: #11bbc7;
 }
 
 a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
   color: inherit;
   text-decoration: none;
+  color: #11bbc7;
 }
 
 a:not([href]):not([tabindex]):focus {
   outline: 0;
+  color: #11bbc7;
 }
 
 pre,
@@ -388,9 +397,6 @@ h3, .h3 {
   font-size: 1.75rem;
 }
 
-h4, .h4 {
-  font-size: 1.5rem;
-}
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -516,7 +522,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #FC8BC0;
+  color: #31878d;
   word-break: break-word;
 }
 
@@ -2518,7 +2524,7 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #F85C70;
+  border-color: #0c8ea5;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23F85C70' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23F85C70' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
@@ -2566,7 +2572,7 @@ textarea.form-control {
 }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
-  color: #F85C70;
+  color: #5cbff8;
 }
 
 .was-validated .form-check-input:invalid ~ .invalid-feedback,
@@ -2576,7 +2582,7 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
-  color: #F85C70;
+  color: #5cd9f8;
 }
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
@@ -2773,14 +2779,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #F85C70;
-  border-color: #F85C70;
+  background-color: #1b7279;
+  border-color: #1357a5;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: #1479a1;
+  border-color: #07504c;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2789,7 +2795,7 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #F85C70;
+  background-color: #5cbaf8;
   border-color: #F85C70;
 }
 
